@@ -1,0 +1,215 @@
+#logo{
+  display: flex;
+  background-repeat: no-repeat;
+  background-color: none;
+}
+#head{
+  transition: 0.4s;
+  opacity: .8;
+  width: 215px;
+}
+#head:hover{
+  background-color: #bfbfbf1c;
+  border-radius: 1em;
+  opacity: 1;
+}
+#social{
+  text-align: center;
+  width: 100%;
+}
+#span{
+  display: flex;
+  justify-content: space-evenly;
+}
+#control-list{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+#gitlogo{
+  transition: transform .2s;
+}
+#sclogo{
+  transition: transform .2s;
+}
+#maillogo{
+  transition: transform .2s;
+}
+#fblogo{
+  transition: transform .2s;
+}
+#instalogo{
+  transition: transform .2s;
+}
+#gitlogo:hover{
+  transform: scale(1.5);
+}
+#sclogo:hover{
+  transform: scale(1.5);
+}
+#maillogo:hover{
+  transform: scale(1.5);
+}
+#fblogo:hover{
+  transform: scale(1.5);
+}
+#instalogo:hover{
+  transform: scale(1.5);
+}
+#divider{
+  border-top: 3px solid #bbb;
+  width: 50%;
+}
+#info{
+  text-align: center;
+}
+#about{
+  /* text-align: center; */
+  text-align: -webkit-center;
+  width: 100%;
+}
+.card-hover:hover{
+  color: #f9f9f9;
+  background-color: darkblue;
+  opacity: 1px;
+}
+#education{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+#edu
+{
+  text-align: center;
+}
+
+@-webkit-keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+@keyframes swing {
+  15% {
+      -webkit-transform: translateY(5px);
+      transform: translateY(5px);
+  }
+  30% {
+      -webkit-transform: translateY(-5px);
+      transform: translateY(-5px);
+  }
+  50% {
+      -webkit-transform: translateY(3px);
+      transform: translateY(3px);
+  }
+  65% {
+      -webkit-transform: translateY(-3px);
+      transform: translateY(-3px);
+  }
+  80% {
+      -webkit-transform: translateY(2px);
+      transform: translateY(2px);
+  }
+  100% {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+  }
+}
+.swing:hover
+{
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+#card1:hover{
+  background-color: darkblue;
+  color: #f9f9f9;
+}
+
+#edulogo{
+  background-color: white;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  backface-visibility: hidden;
+}
+#prog{
+  display: inline-flex;
+  width: 30%;
+}
+#prog-bar-1{
+  animation: progess-bar-1 4s infinite linear;
+}
+@keyframes progess-bar-1{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 85%;
+  }
+}
+#prog-bar-2{
+  animation: progess-bar-2 4s infinite linear;
+}
+@keyframes progess-bar-2{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 75%;
+  }
+}
+#prog-bar-3{
+  animation: progess-bar-3 4s infinite linear;
+}
+@keyframes progess-bar-3{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 25%;
+  }
+}
+#prog-bar-4{
+  animation: progess-bar-4 4s infinite linear;
+}
+@keyframes progess-bar-4{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 50%;
+  }
+}
+#prog-bar-5{
+  animation: progess-bar-5 4s infinite linear;
+}
+@keyframes progess-bar-5{
+  0%{
+    width: 0%;
+  }
+  100%{
+    width: 15%;
+  }
+}
