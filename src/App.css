@@ -1,7 +1,11 @@
 #logo{
   display: flex;
   background-repeat: no-repeat;
-  background-color: none;
+  height: 299px;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 3px solid lavenderblush;
+  box-shadow: 7px 13px 20px 0px #0667843d;
 }
 #head{
   transition: 0.4s;
@@ -212,4 +216,8 @@
   100%{
     width: 15%;
   }
+}
+#exp{
+  width: 100%;
+  padding: 5%;
 }
