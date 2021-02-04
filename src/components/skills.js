@@ -4,7 +4,7 @@ class Skills extends React.Component {
     render() {
         return (
             <div id="skills" style={{ textAlign: 'center' }}>
-                <h1 style={{fontFamily:'cursive'}}>Programming Languages that I Know</h1><br /><br />
+                <h1 style={{fontFamily:'sans-serif'}}>Programming Languages that I Know</h1><br /><br />
 
                 <h4 style={{fontFamily:'sans-serif'}}>JavaScript</h4>
                 <div id="prog" className="progress">

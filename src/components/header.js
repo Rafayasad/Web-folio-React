@@ -1,5 +1,7 @@
 import React from 'react';
 import LOGOIMAGE from '../images/logo.jpg';
+import { Button , Navbar , Nav , NavDropdown } from 'react-bootstrap';
+// import { } from 'react-bootstrap'
 
 class Logo extends React.Component {
     render() {
@@ -76,30 +78,45 @@ class Headcolor extends React.Component {
 class Header extends React.Component {
     render() {
         return (
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                <div className="container-fluid">
-                    <a id="head" className="navbar-brand" href="#"><Logo /> Rafay Asad</a>
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                        <span className="navbar-toggler-icon" />
-                    </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
-                        <ul className="navbar-nav">
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" aria-current="page" href="#">About</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Skills</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="#">Experience</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+            <Navbar collapseOnSelect expand="lg" bg="light" variant="light">
+                <Navbar.Brand href="#home" id="head"><Logo /> Rafay Asad</Navbar.Brand>
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+                <Navbar.Collapse id="responsive-navbar-nav">
+                    <Nav className="mr-auto">
+                        <Nav.Link href="#title">Home</Nav.Link>
+                        <Nav.Link href="#info">About</Nav.Link>
+                        <Nav.Link href="#skills">Skills</Nav.Link>
+                        <Nav.Link href="#Experience">Experience</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+            </Navbar>
+
+
+
+            // <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            //     <div className="container-fluid">
+            //         <a id="head" className="navbar-brand" href="#"><Logo /> Rafay Asad</a>
+            //         <Button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="ture" aria-label="Toggle navigation">
+            //             <span className="navbar-toggler-icon" />
+            //         </Button>
+            //         <div className="collapse navbar-collapse" id="navbarNav">
+            //             <ul className="mr-auto navbar-nav">
+            //                 <li className="nav-item">
+            //                     <a className="nav-link" aria-current="page" id="home" href="#title">Home</a>
+            //                 </li>
+            //                 <li className="nav-item">
+            //                     <a className="nav-link" aria-current="page" id="about" href="#info">About</a>
+            //                 </li>
+            //                 <li className="nav-item">
+            //                     <a className="nav-link" href="#skills" id="skill">Skills</a>
+            //                 </li>
+            //                 <li className="nav-item">
+            //                     <a className="nav-link" href="#Experience">Experience</a>
+            //                 </li>
+            //             </ul>
+            //         </div>
+            //     </div>
+            // </nav>
         );
     }
 }

@@ -7,7 +7,7 @@ class Experience extends React.Component {
         return (
             <div id="exp">
                 <div>
-                <h1 style={{ fontFamily: 'cursive', textAlign: 'center' }}>
+                <h1 id="Experience" style={{ fontFamily: 'sans-serif', textAlign: 'center' }}>
                     Experience
                 </h1>
                 </div>
